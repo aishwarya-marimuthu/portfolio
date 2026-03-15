@@ -1,0 +1,108 @@
+/* Modern Floating Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    padding: 12px 0;
+    background: rgba(10, 11, 16, 0.6);
+    /* Highly transparent dark */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Constrain width for a 'floating pill' look on large screens if desired, 
+     but keeping full width container is safer for general responsiveness */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo span {
+    color: var(--primary);
+    font-family: var(--font-code);
+    font-weight: 600;
+}
+
+.logo:hover span {
+    text-shadow: 0 0 10px var(--primary);
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-number {
+    color: var(--primary);
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.nav-link:hover .nav-number {
+    color: var(--accent);
+    opacity: 1;
+}
+
+/* Resume Button in Nav (if added) */
+.nav-btn {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+}

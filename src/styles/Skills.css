@@ -1,0 +1,57 @@
+.skills-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-card-modern {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card-modern:hover {
+    transform: translateY(-5px);
+    background: rgba(15, 23, 42, 0.8);
+    border-color: var(--primary);
+}
+
+.skill-icon-modern {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    background: rgba(99, 102, 241, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.skill-title-modern {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.skill-tags-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.modern-tag {
+    font-family: var(--font-code);
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.modern-tag:hover {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--text-primary);
+    border-color: var(--primary);
+}

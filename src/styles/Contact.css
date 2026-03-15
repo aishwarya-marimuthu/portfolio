@@ -1,0 +1,38 @@
+.contact-section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px !important;
+}
+
+.contact-title {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: block;
+    font-family: var(--font-code);
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.contact-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.contact-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}

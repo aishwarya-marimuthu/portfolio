@@ -1,0 +1,79 @@
+.projects-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card-modern {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 35px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.project-icon-circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: rgba(34, 211, 238, 0.1);
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-name-modern {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.project-desc-modern {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.project-footer {
+    margin-top: auto;
+}
+
+.tech-stack-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack-modern span {
+    font-size: 0.8rem;
+    font-family: var(--font-code);
+    color: var(--text-secondary);
+}
+
+.tech-stack-modern span::before {
+    content: '#';
+    color: var(--primary);
+    margin-right: 2px;
+}
