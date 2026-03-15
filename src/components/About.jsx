@@ -15,6 +15,7 @@ const About = () => {
                     <span className="code-font highlight" style={{ marginRight: '15px' }}>01.</span> About Me
                 </motion.h2>
 
+
                 <div className="glass-card">
                     <p style={{ marginBottom: '20px', color: 'var(--text-secondary)', fontSize: '1.05rem' }}>
                         I am <strong style={{ color: 'var(--text-primary)' }}>Aishwarya Marimuthu</strong>, a Full Stack Developer and Team Lead (TL) with an MCA degree and over 3 years of experience building enterprise SaaS platforms.
