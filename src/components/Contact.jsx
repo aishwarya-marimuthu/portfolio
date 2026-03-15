@@ -24,9 +24,9 @@ const Contact = () => {
                         <a href="mailto:aishwarya.pma@gmail.com" className="btn btn-primary contact-btn">
                             <FaPaperPlane style={{ marginRight: '10px' }} /> Say Hello
                         </a>
-                        <a href="#" className="btn btn-outline contact-btn">
+                        {/* <a href="#" className="btn btn-outline contact-btn">
                             View Resume
-                        </a>
+                        </a> */}
                     </div>
                 </motion.div>
             </div>

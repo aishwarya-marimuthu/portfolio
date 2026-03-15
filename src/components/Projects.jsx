@@ -64,7 +64,7 @@ const Projects = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    <span className="section-marker">02.</span> Featured Case Studies
+                    <span className="section-marker">04.</span> Featured Projects
                 </motion.h2>
 
                 <div className="projects-grid-modern">

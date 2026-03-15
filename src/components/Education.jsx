@@ -5,14 +5,14 @@ import { FaGraduationCap, FaUniversity } from 'react-icons/fa';
 const Education = () => {
     return (
         <section id="education" className="section">
-            <div className="container" style={{ maxWidth: '800px' }}>
+            <div className="container">
                 <motion.h2
                     className="section-title"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    <span className="code-font highlight" style={{ marginRight: '15px' }}>05.</span> Education
+                    <span className="section-marker">05.</span> Education
                 </motion.h2>
 
                 <motion.div
@@ -20,7 +20,7 @@ const Education = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    style={{ display: 'flex', alignItems: 'center', gap: '20px' }}
+                    style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '20px' }}
                 >
                     <div style={{
                         minWidth: '60px', height: '60px', borderRadius: '50%', background: 'rgba(99, 102, 241, 0.1)',

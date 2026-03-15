@@ -18,7 +18,8 @@ const Hero = () => {
                 >
                     <div className="hero-status">
                         <span className="status-dot"></span>
-                        <span className="code-font">Open to Backend Roles</span>
+                        {/* <span className="code-font">Open to Backend Roles</span> */}
+                        <span className="code-font"> Backend </span>
                     </div>
 
                     <h1 className="hero-title">
@@ -32,16 +33,20 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-actions">
-                        <a href="#projects" className="btn btn-primary">
-                            View Case Studies <FaChevronRight size={12} style={{ marginLeft: '5px' }} />
+                        <a href="/projects" className="btn btn-primary" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                            window.history.pushState(null, '', '/projects');
+                        }}>
+                            View Projects <FaChevronRight size={12} style={{ marginLeft: '5px' }} />
                         </a>
-                        <a href="/portfolio/certificate/Aishwarya Resume.docx" className="btn btn-outline" download>
+                        {/* <a href="/certificate/Aishwarya Resume.docx" className="btn btn-outline" download>
                             Download Resume
-                        </a>
+                        </a> */}
                     </div>
 
                     <div className="hero-socials">
-                        <a href="https://github.com/aishwarya-marimuthu" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                        {/* <a href="https://github.com/aishwarya-marimuthu" target="_blank" rel="noopener noreferrer"><FaGithub /></a> */}
                         <a href="https://www.linkedin.com/in/aishwarya-marimuthu-408923246/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                         <a href="mailto:aishwarya.pma@gmail.com"><FaEnvelope /></a>
                     </div>

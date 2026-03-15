@@ -6,7 +6,7 @@ import '../styles/Experience.css';
 const Experience = () => {
     return (
         <section id="experience" className="section">
-            <div className="container" style={{ maxWidth: '1000px' }}>
+            <div className="container">
                 <motion.h2
                     className="section-title"
                     initial={{ opacity: 0, x: -20 }}
@@ -16,7 +16,7 @@ const Experience = () => {
                     <span className="section-marker">03.</span> Professional History
                 </motion.h2>
 
-                <div className="timeline-wrapper">
+                <div className="timeline-wrapper" style={{ maxWidth: '1000px', margin: '0 auto' }}>
                     {/* Vertical Line */}
                     <div className="timeline-line"></div>
 

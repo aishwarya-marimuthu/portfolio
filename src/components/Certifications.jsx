@@ -5,14 +5,14 @@ import { FaAws, FaCertificate, FaExternalLinkAlt } from 'react-icons/fa';
 const Certifications = () => {
     return (
         <section id="certifications" className="section">
-            <div className="container" style={{ maxWidth: '900px' }}>
+            <div className="container">
                 <motion.h2
                     className="section-title"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    <span className="section-marker">04.</span> Certifications
+                    <span className="section-marker">06.</span> Certifications
                 </motion.h2>
 
                 <motion.div
@@ -21,6 +21,8 @@ const Certifications = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     style={{
+                        maxWidth: '900px',
+                        margin: '0 auto',
                         background: 'linear-gradient(145deg, rgba(255, 153, 0, 0.05) 0%, rgba(255,255,255,0.01) 100%)',
                         border: '1px solid rgba(255, 153, 0, 0.15)',
                         display: 'flex',

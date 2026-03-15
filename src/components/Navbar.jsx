@@ -14,17 +14,30 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'About', path: '/about', id: 'about' },
+        { name: 'Skills', path: '/skills', id: 'skills' },
+        { name: 'Experience', path: '/experience', id: 'experience' },
+        { name: 'Projects', path: '/projects', id: 'projects' },
+        // { name: 'Contact', path: '/contact', id: 'contact' },
     ];
+
+    const handleNavClick = (e, path, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            window.history.pushState(null, '', path);
+        }
+    };
 
     return (
         <nav className={`navbar ${scrolled ? 'scrolled glass-panel' : ''}`}>
             <div className="container navbar-content">
-                <a href="#" className="logo code-font">
+                <a href="/" className="logo code-font" onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    window.history.pushState(null, '', '/');
+                }}>
                     <span>&lt;</span>Aishwarya <span>/&gt;</span>
                 </a>
 
@@ -33,7 +46,11 @@ const Navbar = () => {
                     <ul className="nav-links">
                         {navLinks.map((link, index) => (
                             <li key={link.name}>
-                                <a href={link.href} className="nav-link">
+                                <a
+                                    href={link.path}
+                                    className="nav-link"
+                                    onClick={(e) => handleNavClick(e, link.path, link.id)}
+                                >
                                     <span className="nav-number">0{index + 1}.</span>
                                     {link.name}
                                 </a>

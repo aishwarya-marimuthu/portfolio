@@ -13,7 +13,7 @@ const Skills = () => {
         {
             title: "Database Engineering",
             icon: <FaDatabase />,
-            skills: ["MongoDB", "PostgreSQL", "Schema Design", "Performance Tuning"]
+            skills: ["MongoDB", "Schema Design", "Performance Tuning", "PostgreSQL"]
         },
         {
             title: "Cloud & DevOps",
@@ -46,7 +46,7 @@ const Skills = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    <span className="section-marker">02.</span> Technical Arsenal
+                    <span className="section-marker">02.</span> Technical Skills
                 </motion.h2>
 
                 <div className="skills-grid-modern">
